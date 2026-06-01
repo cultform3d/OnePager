@@ -166,81 +166,81 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
-      {/* PRODUCTS SECTION */}
-      <section id="products" className="min-h-screen flex flex-col justify-center px-6 md:px-20 border-t border-dashed border-border relative py-24 overflow-hidden">
-        <div className={`max-w-6xl mx-auto w-full z-10 ${getSectionClass("products")}`}>
-          <div className="text-[10px] tracking-[0.2em] font-bold text-neon-green uppercase mb-6 flex items-center gap-4">
-            <span>03 // Продукт для пользователей</span>
-            <div className="h-px bg-neon-green w-12" />
+        {/* PRODUCTS SECTION */}
+        <section id="products" className="min-h-screen flex flex-col justify-center px-6 md:px-20 border-t border-dashed border-border relative py-24 overflow-hidden">
+          <div className={`max-w-6xl mx-auto w-full z-10 ${getSectionClass("products")}`}>
+            <div className="text-[10px] tracking-[0.2em] font-bold text-neon-green uppercase mb-6 flex items-center gap-4">
+              <span>03 // Продукт для пользователей</span>
+              <div className="h-px bg-neon-green w-12" />
+            </div>
+            <h2 className="text-5xl md:text-7xl font-semibold tracking-[-0.02em] leading-none mb-16">
+              Направления реализации
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* B2B Card */}
+              <div className="p-10 border border-border/40 rounded-3xl bg-surface/40 group hover:bg-neon-blue/5 hover:border-neon-blue/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.15)] relative overflow-hidden flex flex-col h-full">
+                <div className="w-2 h-full bg-neon-blue absolute top-0 left-0" />
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="p-3 bg-neon-blue/10 rounded-xl text-neon-blue">
+                    <Factory size={28} />
+                  </div>
+                  <h3 className="text-3xl font-semibold text-foreground">B2B Сегмент</h3>
+                </div>
+                <p className="text-xl font-light text-muted mb-8 flex-grow">
+                  Производство комплектующих для бизнеса. Мы поставляем детали, необходимые для создания конечного продукта. Пример — 3D-печатные оправы для очков.
+                </p>
+                
+                <div className="bg-background/80 rounded-2xl p-6 border border-border/50 backdrop-blur-sm">
+                  <div className="text-[10px] tracking-[0.2em] font-bold text-muted uppercase mb-4">Себестоимость — Реализация</div>
+                  <div className="flex justify-between items-center py-3 border-b border-dashed border-border">
+                    <span className="text-lg font-light">Себестоимость</span>
+                    <span className="text-xl font-semibold text-foreground">$0.5 - $1</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3">
+                    <span className="text-lg font-light">Продажа (оптика)</span>
+                    <span className="text-xl font-semibold text-neon-blue">$10 - $30</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* B2C Card */}
+              <div className="p-10 border border-border/40 rounded-3xl bg-surface/40 group hover:bg-neon-yellow/5 hover:border-neon-yellow/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,194,0,0.15)] relative overflow-hidden flex flex-col h-full">
+                <div className="w-2 h-full bg-neon-yellow absolute top-0 left-0" />
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="p-3 bg-neon-yellow/10 rounded-xl text-neon-yellow">
+                    <Users size={28} />
+                  </div>
+                  <h3 className="text-3xl font-semibold text-foreground">B2C Сегмент</h3>
+                </div>
+                <p className="text-xl font-light text-muted mb-8 flex-grow">
+                  Производство дизайнерских изделий для повседневной жизни и эстетического оформления пространства.
+                </p>
+                
+                <div className="bg-background/80 rounded-2xl p-6 border border-border/50 backdrop-blur-sm">
+                  <div className="text-[10px] tracking-[0.2em] font-bold text-muted uppercase mb-4">Себестоимость — Реализация</div>
+                  <div className="flex justify-between items-center py-3 border-b border-dashed border-border">
+                    <span className="text-lg font-light">Набор (3 привидения)</span>
+                    <span className="text-xl font-semibold text-foreground">$1.9</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3">
+                    <span className="text-lg font-light">Розничная цена</span>
+                    <span className="text-xl font-semibold text-neon-yellow">$3.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div className="text-xl font-light text-muted mb-8 flex-grow">
+              Выше представлены образцы для понимания направленности ассортимента, который будет постоянно расширяться и меняться в зависимости от конъюнктуры рынка.
+            </div>
           </div>
-          <h2 className="text-5xl md:text-7xl font-semibold tracking-[-0.02em] leading-none mb-16">
-            Направления реализации
-          </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* B2B Card */}
-            <div className="p-10 border border-border/40 rounded-3xl bg-surface/40 group hover:bg-neon-blue/5 hover:border-neon-blue/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(59,130,246,0.15)] relative overflow-hidden flex flex-col h-full">
-              <div className="w-2 h-full bg-neon-blue absolute top-0 left-0" />
-              <div className="flex items-center gap-4 mb-8">
-                <div className="p-3 bg-neon-blue/10 rounded-xl text-neon-blue">
-                  <Factory size={28} />
-                </div>
-                <h3 className="text-3xl font-semibold text-foreground">B2B Сегмент</h3>
-              </div>
-              <p className="text-xl font-light text-muted mb-8 flex-grow">
-                Производство комплектующих для бизнеса. Мы поставляем детали, необходимые для создания конечного продукта. Пример — 3D-печатные оправы для очков.
-              </p>
-              
-              <div className="bg-background/80 rounded-2xl p-6 border border-border/50 backdrop-blur-sm">
-                <div className="text-[10px] tracking-[0.2em] font-bold text-muted uppercase mb-4">Себестоимость — Реализация</div>
-                <div className="flex justify-between items-center py-3 border-b border-dashed border-border">
-                  <span className="text-lg font-light">Себестоимость</span>
-                  <span className="text-xl font-semibold text-foreground">$0.5 - $1</span>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-lg font-light">Продажа (оптика)</span>
-                  <span className="text-xl font-semibold text-neon-blue">$10 - $30</span>
-                </div>
-              </div>
-            </div>
-
-            {/* B2C Card */}
-            <div className="p-10 border border-border/40 rounded-3xl bg-surface/40 group hover:bg-neon-yellow/5 hover:border-neon-yellow/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,194,0,0.15)] relative overflow-hidden flex flex-col h-full">
-              <div className="w-2 h-full bg-neon-yellow absolute top-0 left-0" />
-              <div className="flex items-center gap-4 mb-8">
-                <div className="p-3 bg-neon-yellow/10 rounded-xl text-neon-yellow">
-                  <Users size={28} />
-                </div>
-                <h3 className="text-3xl font-semibold text-foreground">B2C Сегмент</h3>
-              </div>
-              <p className="text-xl font-light text-muted mb-8 flex-grow">
-                Производство дизайнерских изделий для повседневной жизни и эстетического оформления пространства.
-              </p>
-              
-              <div className="bg-background/80 rounded-2xl p-6 border border-border/50 backdrop-blur-sm">
-                <div className="text-[10px] tracking-[0.2em] font-bold text-muted uppercase mb-4">Себестоимость — Реализация</div>
-                <div className="flex justify-between items-center py-3 border-b border-dashed border-border">
-                  <span className="text-lg font-light">Набор (3 привидения)</span>
-                  <span className="text-xl font-semibold text-foreground">$1.9</span>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-lg font-light">Розничная цена</span>
-                  <span className="text-xl font-semibold text-neon-yellow">$3.5</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div className="text-xl font-light text-muted mb-8 flex-grow">
-            Выше представлены образцы для понимания направленности ассортимента, который будет постоянно расширяться и меняться в зависимости от конъюнктуры рынка.
-          </div>
-        </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-neon-blue/5 rounded-full blur-[100px] -z-10" />
-      </section>
+          {/* Decorative elements */}
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-neon-blue/5 rounded-full blur-[100px] -z-10" />
+        </section>
 
 
       
