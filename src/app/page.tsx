@@ -223,11 +223,11 @@ export default function Home() {
                   <div className="text-[10px] tracking-[0.2em] font-bold text-muted uppercase mb-4">Себестоимость — Реализация</div>
                   <div className="flex justify-between items-center py-3 border-b border-dashed border-border">
                     <span className="text-lg font-light">Набор (3 привидения)</span>
-                    <span className="text-xl font-semibold text-foreground">$1.9</span>
+                    <span className="text-xl font-semibold text-foreground">$2.9</span>
                   </div>
                   <div className="flex justify-between items-center py-3">
                     <span className="text-lg font-light">Розничная цена</span>
-                    <span className="text-xl font-semibold text-neon-yellow">$3.5</span>
+                    <span className="text-xl font-semibold text-neon-yellow">$5.1</span>
                   </div>
                 </div>
               </div>
