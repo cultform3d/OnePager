@@ -232,6 +232,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <br>
+          <div className="text-xl font-light text-muted mb-8 flex-grow">
+            Выше представлены образцы для понимания направленности ассортимента, который будет постоянно расширяться и меняться в зависимости от конъюнктуры рынка.
+          </div>
         </div>
         
         {/* Decorative elements */}
